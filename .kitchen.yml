@@ -1,0 +1,27 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+  always_update_cookbooks: true
+  product_version: 14
+  client_rb:
+    chef_license: accept
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: ubuntu-16.04
+    driver:
+      box: ubuntu/xenial64
+
+suites:
+  - name: default
+    run_list:
+      - recipe[uber-app::default]
+    verifier:
+      inspec_tests:
+        - test/integration/default
+    attributes:
