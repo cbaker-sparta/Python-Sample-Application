@@ -1,5 +1,5 @@
 #
-# Cookbook:: python
+# Cookbook:: uber-app
 # Spec:: default
 #
 # Copyright:: 2019, The Authors, All Rights Reserved.

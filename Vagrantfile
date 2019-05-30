@@ -41,17 +41,17 @@ Vagrant.configure("2") do |config|
        chef.add_recipe "node::default"
        chef.version = "14.12.9"
      end
-     app.vm.provision "shell", inline: set_env({ DB_HOST: "mongodb://192.168.10.150:27017/posts"}), privileged: false
+     # app.vm.provision "shell", inline: set_env({ DB_HOST: "mongodb://192.168.10.150:27017/posts"}), privileged: false
    end
 
-   config.vm.define "db" do |db|
-     db.vm.box = "ubuntu/xenial64"
-     db.vm.network "private_network", ip: "192.168.10.150"
-     db.hostsupdater.aliases = ["database.local"]
-
-     db.vm.provision "chef_solo" do |chef|
-       chef.add_recipe "mongodb::default"
-       chef.version = "14.12.9"
-     end
-   end
+   # config.vm.define "db" do |db|
+   #   db.vm.box = "ubuntu/xenial64"
+   #   db.vm.network "private_network", ip: "192.168.10.150"
+   #   db.hostsupdater.aliases = ["database.local"]
+   #
+   #   db.vm.provision "chef_solo" do |chef|
+   #     chef.add_recipe "mongodb::default"
+   #     chef.version = "14.12.9"
+   #   end
+   # end
 end
