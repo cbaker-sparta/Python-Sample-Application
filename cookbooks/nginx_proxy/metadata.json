@@ -1,0 +1,41 @@
+{
+  "name": "nginx_proxy",
+  "description": "Installs/Configures nginx_proxy",
+  "long_description": "Installs/Configures nginx_proxy",
+  "maintainer": "The Authors",
+  "maintainer_email": "you@example.com",
+  "license": "All Rights Reserved",
+  "platforms": {
+
+  },
+  "dependencies": {
+    "nginx": ">= 0.0.0",
+    "build-essential": ">= 5.0",
+    "ohai": ">= 4.1.0",
+    "yum-epel": ">= 0.0.0"
+  },
+  "providing": {
+
+  },
+  "attributes": {
+
+  },
+  "recipes": {
+
+  },
+  "version": "0.1.0",
+  "source_url": "https://github.com/sous-chefs/nginx",
+  "issues_url": "",
+  "privacy": false,
+  "chef_versions": [
+    [
+      ">= 13.0"
+    ]
+  ],
+  "ohai_versions": [
+
+  ],
+  "gems": [
+
+  ]
+}

@@ -1,128 +1,264 @@
-I, [2019-05-30T19:22:08.097199 #62822]  INFO -- default-ubuntu-1604: -----> Cleaning up any prior instances of <default-ubuntu-1604>
-I, [2019-05-30T19:22:08.097812 #62822]  INFO -- default-ubuntu-1604: -----> Destroying <default-ubuntu-1604>...
-I, [2019-05-30T19:22:13.158564 #62822]  INFO -- default-ubuntu-1604: ==> default: Forcing shutdown of VM...
-I, [2019-05-30T19:22:14.618366 #62822]  INFO -- default-ubuntu-1604: ==> default: Destroying VM and associated drives...
-I, [2019-05-30T19:22:15.020490 #62822]  INFO -- default-ubuntu-1604: ==> default: [vagrant-hostsupdater] Removing hosts
-I, [2019-05-30T19:22:15.113080 #62822]  INFO -- default-ubuntu-1604: Vagrant instance <default-ubuntu-1604> destroyed.
-I, [2019-05-30T19:22:15.114864 #62822]  INFO -- default-ubuntu-1604: Finished destroying <default-ubuntu-1604> (0m7.02s).
-I, [2019-05-30T19:22:15.116659 #62822]  INFO -- default-ubuntu-1604: -----> Testing <default-ubuntu-1604>
-I, [2019-05-30T19:22:15.116869 #62822]  INFO -- default-ubuntu-1604: -----> Creating <default-ubuntu-1604>...
-I, [2019-05-30T19:22:18.405504 #62822]  INFO -- default-ubuntu-1604: Bringing machine 'default' up with 'virtualbox' provider...
-I, [2019-05-30T19:22:18.709470 #62822]  INFO -- default-ubuntu-1604: ==> default: Importing base box 'ubuntu/xenial64'...
-I, [2019-05-30T19:22:26.592088 #62822]  INFO -- default-ubuntu-1604: [KProgress: 10%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
-I, [2019-05-30T19:22:26.913917 #62822]  INFO -- default-ubuntu-1604: ==> default: Checking if box 'ubuntu/xenial64' version '20190511.0.0' is up to date...
-I, [2019-05-30T19:22:28.184376 #62822]  INFO -- default-ubuntu-1604: ==> default: Setting the name of the VM: kitchen-Python-Sample-Application-default-ubuntu-1604
-I, [2019-05-30T19:22:29.110730 #62822]  INFO -- default-ubuntu-1604: ==> default: Fixed port collision for 22 => 2222. Now on port 2201.
-I, [2019-05-30T19:22:29.183198 #62822]  INFO -- default-ubuntu-1604: ==> default: Clearing any previously set network interfaces...
-I, [2019-05-30T19:22:29.289253 #62822]  INFO -- default-ubuntu-1604: ==> default: Preparing network interfaces based on configuration...
-I, [2019-05-30T19:22:29.289797 #62822]  INFO -- default-ubuntu-1604:     default: Adapter 1: nat
-I, [2019-05-30T19:22:29.388411 #62822]  INFO -- default-ubuntu-1604: ==> default: Forwarding ports...
-I, [2019-05-30T19:22:29.531750 #62822]  INFO -- default-ubuntu-1604:     default: 22 (guest) => 2201 (host) (adapter 1)
-I, [2019-05-30T19:22:29.855895 #62822]  INFO -- default-ubuntu-1604: ==> default: Running 'pre-boot' VM customizations...
-I, [2019-05-30T19:22:30.135631 #62822]  INFO -- default-ubuntu-1604: ==> default: Booting VM...
-I, [2019-05-30T19:22:30.455669 #62822]  INFO -- default-ubuntu-1604: ==> default: Waiting for machine to boot. This may take a few minutes...
-I, [2019-05-30T19:22:31.346555 #62822]  INFO -- default-ubuntu-1604:     default: SSH address: 127.0.0.1:2201
-I, [2019-05-30T19:22:31.346787 #62822]  INFO -- default-ubuntu-1604:     default: SSH username: vagrant
-I, [2019-05-30T19:22:31.347218 #62822]  INFO -- default-ubuntu-1604:     default: SSH auth method: private key
-I, [2019-05-30T19:22:55.923142 #62822]  INFO -- default-ubuntu-1604:     default: 
-I, [2019-05-30T19:22:55.923345 #62822]  INFO -- default-ubuntu-1604:     default: Vagrant insecure key detected. Vagrant will automatically replace
-I, [2019-05-30T19:22:55.923445 #62822]  INFO -- default-ubuntu-1604:     default: this with a newly generated keypair for better security.
-I, [2019-05-30T19:22:57.972433 #62822]  INFO -- default-ubuntu-1604:     default: 
-I, [2019-05-30T19:22:57.975109 #62822]  INFO -- default-ubuntu-1604:     default: Inserting generated public key within guest...
-I, [2019-05-30T19:22:58.226570 #62822]  INFO -- default-ubuntu-1604:     default: Removing insecure key from the guest if it's present...
-I, [2019-05-30T19:22:58.397879 #62822]  INFO -- default-ubuntu-1604:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
-I, [2019-05-30T19:22:59.568931 #62822]  INFO -- default-ubuntu-1604: ==> default: Machine booted and ready!
-I, [2019-05-30T19:22:59.574419 #62822]  INFO -- default-ubuntu-1604: ==> default: Checking for guest additions in VM...
-I, [2019-05-30T19:22:59.657409 #62822]  INFO -- default-ubuntu-1604:     default: The guest additions on this VM do not match the installed version of
-I, [2019-05-30T19:22:59.657534 #62822]  INFO -- default-ubuntu-1604:     default: VirtualBox! In most cases this is fine, but in rare cases it can
-I, [2019-05-30T19:22:59.657601 #62822]  INFO -- default-ubuntu-1604:     default: prevent things such as shared folders from working properly. If you see
-I, [2019-05-30T19:22:59.657657 #62822]  INFO -- default-ubuntu-1604:     default: shared folder errors, please make sure the guest additions within the
-I, [2019-05-30T19:22:59.657705 #62822]  INFO -- default-ubuntu-1604:     default: virtual machine match the version of VirtualBox you have installed on
-I, [2019-05-30T19:22:59.657750 #62822]  INFO -- default-ubuntu-1604:     default: your host and reload your VM.
-I, [2019-05-30T19:22:59.657830 #62822]  INFO -- default-ubuntu-1604:     default: 
-I, [2019-05-30T19:22:59.657874 #62822]  INFO -- default-ubuntu-1604:     default: Guest Additions Version: 5.1.38
-I, [2019-05-30T19:22:59.657933 #62822]  INFO -- default-ubuntu-1604:     default: VirtualBox Version: 6.0
-I, [2019-05-30T19:22:59.659782 #62822]  INFO -- default-ubuntu-1604: ==> default: [vagrant-hostsupdater] Checking for host entries
-I, [2019-05-30T19:22:59.661978 #62822]  INFO -- default-ubuntu-1604: ==> default: Setting hostname...
-I, [2019-05-30T19:23:00.601728 #62822]  INFO -- default-ubuntu-1604: ==> default: Machine not provisioned because `--no-provision` is specified.
-I, [2019-05-30T19:23:04.237777 #62822]  INFO -- default-ubuntu-1604: [SSH] Established
-I, [2019-05-30T19:23:04.238912 #62822]  INFO -- default-ubuntu-1604: Vagrant instance <default-ubuntu-1604> created.
-I, [2019-05-30T19:23:04.240230 #62822]  INFO -- default-ubuntu-1604: Finished creating <default-ubuntu-1604> (0m49.12s).
-I, [2019-05-30T19:23:04.242044 #62822]  INFO -- default-ubuntu-1604: -----> Converging <default-ubuntu-1604>...
-I, [2019-05-30T19:23:04.242937 #62822]  INFO -- default-ubuntu-1604: Preparing files for transfer
-I, [2019-05-30T19:23:04.243228 #62822]  INFO -- default-ubuntu-1604: Preparing dna.json
-I, [2019-05-30T19:23:04.243929 #62822]  INFO -- default-ubuntu-1604: Resolving cookbook dependencies with Berkshelf 7.0.8...
-I, [2019-05-30T19:23:13.382119 #62822]  INFO -- default-ubuntu-1604: Removing non-cookbook files before transfer
-I, [2019-05-30T19:23:13.422727 #62822]  INFO -- default-ubuntu-1604: Preparing validation.pem
-I, [2019-05-30T19:23:13.425544 #62822]  INFO -- default-ubuntu-1604: Preparing client.rb
-I, [2019-05-30T19:23:13.565640 #62822]  INFO -- default-ubuntu-1604: ubuntu 16.04 x86_64
-I, [2019-05-30T19:23:13.565757 #62822]  INFO -- default-ubuntu-1604: Getting information for chef stable 14.10.9 for ubuntu...
-I, [2019-05-30T19:23:13.565806 #62822]  INFO -- default-ubuntu-1604: downloading https://omnitruck.chef.io/stable/chef/metadata?v=14.10.9&p=ubuntu&pv=16.04&m=x86_64
-I, [2019-05-30T19:23:13.565845 #62822]  INFO -- default-ubuntu-1604:   to file /tmp/install.sh.1786/metadata.txt
-I, [2019-05-30T19:23:13.566575 #62822]  INFO -- default-ubuntu-1604: trying wget...
-I, [2019-05-30T19:23:13.690789 #62822]  INFO -- default-ubuntu-1604: sha1	cf19d6a3c21bef28160a9b6896381c6e160fb640
-I, [2019-05-30T19:23:13.690889 #62822]  INFO -- default-ubuntu-1604: sha256	c41299e167acb143b2328a63a774c3b85cd939d3ee40bc4aedf9f62252fe4ab9
-I, [2019-05-30T19:23:13.690935 #62822]  INFO -- default-ubuntu-1604: url	https://packages.chef.io/files/stable/chef/14.10.9/ubuntu/16.04/chef_14.10.9-1_amd64.deb
-I, [2019-05-30T19:23:13.691309 #62822]  INFO -- default-ubuntu-1604: version	14.10.9
-I, [2019-05-30T19:23:13.694998 #62822]  INFO -- default-ubuntu-1604: downloaded metadata file looks valid...
-I, [2019-05-30T19:23:13.714459 #62822]  INFO -- default-ubuntu-1604: downloading https://packages.chef.io/files/stable/chef/14.10.9/ubuntu/16.04/chef_14.10.9-1_amd64.deb
-I, [2019-05-30T19:23:13.714599 #62822]  INFO -- default-ubuntu-1604:   to file /tmp/install.sh.1786/chef_14.10.9-1_amd64.deb
-I, [2019-05-30T19:23:13.715603 #62822]  INFO -- default-ubuntu-1604: trying wget...
-I, [2019-05-30T19:23:15.496110 #62822]  INFO -- default-ubuntu-1604: Comparing checksum with sha256sum...
-I, [2019-05-30T19:23:15.688963 #62822]  INFO -- default-ubuntu-1604: Installing chef 14.10.9
-I, [2019-05-30T19:23:15.689056 #62822]  INFO -- default-ubuntu-1604: installing with dpkg...
-I, [2019-05-30T19:23:15.776410 #62822]  INFO -- default-ubuntu-1604: Selecting previously unselected package chef.
-I, [2019-05-30T19:23:15.941243 #62822]  INFO -- default-ubuntu-1604: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 54225 files and directories currently installed.)
-I, [2019-05-30T19:23:15.944266 #62822]  INFO -- default-ubuntu-1604: Preparing to unpack .../chef_14.10.9-1_amd64.deb ...
-I, [2019-05-30T19:23:15.949112 #62822]  INFO -- default-ubuntu-1604: Unpacking chef (14.10.9-1) ...
-I, [2019-05-30T19:23:21.461466 #62822]  INFO -- default-ubuntu-1604: Setting up chef (14.10.9-1) ...
-I, [2019-05-30T19:23:21.560560 #62822]  INFO -- default-ubuntu-1604: Thank you for installing Chef!
-I, [2019-05-30T19:23:21.612029 #62822]  INFO -- default-ubuntu-1604: Transferring files to <default-ubuntu-1604>
-I, [2019-05-30T19:23:25.220850 #62822]  INFO -- default-ubuntu-1604: [2019-05-30T18:23:23+00:00] INFO: Started chef-zero at chefzero://localhost:1 with repository at /tmp/kitchen, /tmp/kitchen
-I, [2019-05-30T19:23:25.221530 #62822]  INFO -- default-ubuntu-1604:   One version per cookbook
-I, [2019-05-30T19:23:25.221967 #62822]  INFO -- default-ubuntu-1604: 
-I, [2019-05-30T19:23:25.231076 #62822]  INFO -- default-ubuntu-1604: Starting Chef Client, version 14.10.9
-I, [2019-05-30T19:23:25.232048 #62822]  INFO -- default-ubuntu-1604: [2019-05-30T18:23:23+00:00] INFO: *** Chef 14.10.9 ***
-I, [2019-05-30T19:23:25.232695 #62822]  INFO -- default-ubuntu-1604: [2019-05-30T18:23:23+00:00] INFO: Platform: x86_64-linux
-I, [2019-05-30T19:23:25.233576 #62822]  INFO -- default-ubuntu-1604: [2019-05-30T18:23:23+00:00] INFO: Chef-client pid: 1867
-I, [2019-05-30T19:23:25.235008 #62822]  INFO -- default-ubuntu-1604: [2019-05-30T18:23:23+00:00] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
-I, [2019-05-30T19:23:26.823224 #62822]  INFO -- default-ubuntu-1604: Creating a new client identity for default-ubuntu-1604 using the validator key.
-I, [2019-05-30T19:23:26.823329 #62822]  INFO -- default-ubuntu-1604: [2019-05-30T18:23:25+00:00] INFO: Client key /tmp/kitchen/client.pem is not present - registering
-I, [2019-05-30T19:23:26.870403 #62822]  INFO -- default-ubuntu-1604: [2019-05-30T18:23:25+00:00] INFO: Setting the run_list to ["recipe[uber-app::default]"] from CLI options
-I, [2019-05-30T19:23:26.879185 #62822]  INFO -- default-ubuntu-1604: [2019-05-30T18:23:25+00:00] INFO: Run List is [recipe[uber-app::default]]
-I, [2019-05-30T19:23:26.879328 #62822]  INFO -- default-ubuntu-1604: [2019-05-30T18:23:25+00:00] INFO: Run List expands to [uber-app::default]
-I, [2019-05-30T19:23:26.879386 #62822]  INFO -- default-ubuntu-1604: [2019-05-30T18:23:25+00:00] INFO: Starting Chef Run for default-ubuntu-1604
-I, [2019-05-30T19:23:26.879416 #62822]  INFO -- default-ubuntu-1604: [2019-05-30T18:23:25+00:00] INFO: Running start handlers
-I, [2019-05-30T19:23:26.879782 #62822]  INFO -- default-ubuntu-1604: [2019-05-30T18:23:25+00:00] INFO: Start handlers complete.
-I, [2019-05-30T19:23:26.882316 #62822]  INFO -- default-ubuntu-1604: resolving cookbooks for run list: ["uber-app::default"]
-I, [2019-05-30T19:23:26.980651 #62822]  INFO -- default-ubuntu-1604: [2019-05-30T18:23:25+00:00] INFO: Loading cookbooks [uber-app@0.1.0]
-I, [2019-05-30T19:23:26.981736 #62822]  INFO -- default-ubuntu-1604: Synchronizing Cookbooks:
-I, [2019-05-30T19:23:26.991230 #62822]  INFO -- default-ubuntu-1604: [2019-05-30T18:23:25+00:00] INFO: Storing updated cookbooks/uber-app/recipes/default.rb in the cache.
-I, [2019-05-30T19:23:26.992687 #62822]  INFO -- default-ubuntu-1604: [2019-05-30T18:23:25+00:00] INFO: Storing updated cookbooks/uber-app/README.md in the cache.
-I, [2019-05-30T19:23:26.993772 #62822]  INFO -- default-ubuntu-1604: [2019-05-30T18:23:25+00:00] INFO: Storing updated cookbooks/uber-app/metadata.json in the cache.
-I, [2019-05-30T19:23:26.994450 #62822]  INFO -- default-ubuntu-1604: [2019-05-30T18:23:25+00:00] INFO: Storing updated cookbooks/uber-app/metadata.rb in the cache.
-I, [2019-05-30T19:23:26.995330 #62822]  INFO -- default-ubuntu-1604:   - uber-app (0.1.0)
-I, [2019-05-30T19:23:26.999868 #62822]  INFO -- default-ubuntu-1604: Installing Cookbook Gems:
-I, [2019-05-30T19:23:26.999986 #62822]  INFO -- default-ubuntu-1604: Compiling Cookbooks...
-I, [2019-05-30T19:23:27.001058 #62822]  INFO -- default-ubuntu-1604: Converging 0 resources
-I, [2019-05-30T19:23:27.044934 #62822]  INFO -- default-ubuntu-1604: [2019-05-30T18:23:25+00:00] INFO: Chef Run complete in 0.16571447 seconds
-I, [2019-05-30T19:23:27.047787 #62822]  INFO -- default-ubuntu-1604: 
-I, [2019-05-30T19:23:27.048315 #62822]  INFO -- default-ubuntu-1604: Running handlers:
-I, [2019-05-30T19:23:27.049080 #62822]  INFO -- default-ubuntu-1604: [2019-05-30T18:23:25+00:00] INFO: Running report handlers
-I, [2019-05-30T19:23:27.049919 #62822]  INFO -- default-ubuntu-1604: Running handlers complete
-I, [2019-05-30T19:23:27.050704 #62822]  INFO -- default-ubuntu-1604: [2019-05-30T18:23:25+00:00] INFO: Report handlers complete
-I, [2019-05-30T19:23:27.051736 #62822]  INFO -- default-ubuntu-1604: Chef Client finished, 0/0 resources updated in 01 seconds
-I, [2019-05-30T19:23:27.064797 #62822]  INFO -- default-ubuntu-1604: Downloading files from <default-ubuntu-1604>
-I, [2019-05-30T19:23:27.119468 #62822]  INFO -- default-ubuntu-1604: Finished converging <default-ubuntu-1604> (0m22.88s).
-I, [2019-05-30T19:23:27.119634 #62822]  INFO -- default-ubuntu-1604: -----> Setting up <default-ubuntu-1604>...
-I, [2019-05-30T19:23:27.122113 #62822]  INFO -- default-ubuntu-1604: Finished setting up <default-ubuntu-1604> (0m0.00s).
-I, [2019-05-30T19:23:27.122304 #62822]  INFO -- default-ubuntu-1604: -----> Verifying <default-ubuntu-1604>...
-I, [2019-05-30T19:23:27.513836 #62822]  INFO -- default-ubuntu-1604: Loaded tests from {:path=>".Users.tech-a24.Documents.engineering-29.10-week.project2.Python-Sample-Application.test.integration.default"} 
-I, [2019-05-30T19:23:27.679659 #62822]  INFO -- default-ubuntu-1604: Finished verifying <default-ubuntu-1604> (0m0.55s).
-I, [2019-05-30T19:23:27.682802 #62822]  INFO -- default-ubuntu-1604: -----> Destroying <default-ubuntu-1604>...
-I, [2019-05-30T19:23:32.152099 #62822]  INFO -- default-ubuntu-1604: ==> default: Forcing shutdown of VM...
-I, [2019-05-30T19:23:33.535158 #62822]  INFO -- default-ubuntu-1604: ==> default: Destroying VM and associated drives...
-I, [2019-05-30T19:23:33.830772 #62822]  INFO -- default-ubuntu-1604: ==> default: [vagrant-hostsupdater] Removing hosts
-I, [2019-05-30T19:23:33.875692 #62822]  INFO -- default-ubuntu-1604: Vagrant instance <default-ubuntu-1604> destroyed.
-I, [2019-05-30T19:23:33.877500 #62822]  INFO -- default-ubuntu-1604: Finished destroying <default-ubuntu-1604> (0m6.19s).
-I, [2019-05-30T19:23:33.879246 #62822]  INFO -- default-ubuntu-1604: Finished testing <default-ubuntu-1604> (1m25.78s).
+I, [2019-05-31T15:13:48.702386 #69905]  INFO -- default-ubuntu-1604: -----> Converging <default-ubuntu-1604>...
+I, [2019-05-31T15:13:48.703053 #69905]  INFO -- default-ubuntu-1604: Preparing files for transfer
+I, [2019-05-31T15:13:48.703258 #69905]  INFO -- default-ubuntu-1604: Preparing dna.json
+I, [2019-05-31T15:13:48.703816 #69905]  INFO -- default-ubuntu-1604: Resolving cookbook dependencies with Berkshelf 7.0.8...
+I, [2019-05-31T15:13:56.102223 #69905]  INFO -- default-ubuntu-1604: Removing non-cookbook files before transfer
+I, [2019-05-31T15:13:56.141769 #69905]  INFO -- default-ubuntu-1604: Preparing validation.pem
+I, [2019-05-31T15:13:56.142342 #69905]  INFO -- default-ubuntu-1604: Preparing client.rb
+I, [2019-05-31T15:13:56.530056 #69905]  INFO -- default-ubuntu-1604: chef installation detected
+I, [2019-05-31T15:13:56.530659 #69905]  INFO -- default-ubuntu-1604: install_strategy set to 'once'
+I, [2019-05-31T15:13:56.531292 #69905]  INFO -- default-ubuntu-1604: Nothing to install
+I, [2019-05-31T15:13:56.554769 #69905]  INFO -- default-ubuntu-1604: Transferring files to <default-ubuntu-1604>
+I, [2019-05-31T15:14:00.157787 #69905]  INFO -- default-ubuntu-1604: [2019-05-31T14:14:00+00:00] INFO: Started chef-zero at chefzero://localhost:1 with repository at /tmp/kitchen, /tmp/kitchen
+I, [2019-05-31T15:14:00.157862 #69905]  INFO -- default-ubuntu-1604:   One version per cookbook
+I, [2019-05-31T15:14:00.157889 #69905]  INFO -- default-ubuntu-1604: 
+I, [2019-05-31T15:14:00.162067 #69905]  INFO -- default-ubuntu-1604: Starting Chef Client, version 14.10.9
+I, [2019-05-31T15:14:00.162522 #69905]  INFO -- default-ubuntu-1604: [2019-05-31T14:14:00+00:00] INFO: *** Chef 14.10.9 ***
+I, [2019-05-31T15:14:00.162606 #69905]  INFO -- default-ubuntu-1604: [2019-05-31T14:14:00+00:00] INFO: Platform: x86_64-linux
+I, [2019-05-31T15:14:00.163020 #69905]  INFO -- default-ubuntu-1604: [2019-05-31T14:14:00+00:00] INFO: Chef-client pid: 12553
+I, [2019-05-31T15:14:00.164786 #69905]  INFO -- default-ubuntu-1604: [2019-05-31T14:14:00+00:00] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+I, [2019-05-31T15:14:01.544038 #69905]  INFO -- default-ubuntu-1604: [2019-05-31T14:14:01+00:00] INFO: Setting the run_list to ["recipe[uber-app::default]"] from CLI options
+I, [2019-05-31T15:14:01.552966 #69905]  INFO -- default-ubuntu-1604: [2019-05-31T14:14:01+00:00] INFO: Run List is [recipe[uber-app::default]]
+I, [2019-05-31T15:14:01.553045 #69905]  INFO -- default-ubuntu-1604: [2019-05-31T14:14:01+00:00] INFO: Run List expands to [uber-app::default]
+I, [2019-05-31T15:14:01.553074 #69905]  INFO -- default-ubuntu-1604: [2019-05-31T14:14:01+00:00] INFO: Starting Chef Run for default-ubuntu-1604
+I, [2019-05-31T15:14:01.553360 #69905]  INFO -- default-ubuntu-1604: [2019-05-31T14:14:01+00:00] INFO: Running start handlers
+I, [2019-05-31T15:14:01.553420 #69905]  INFO -- default-ubuntu-1604: [2019-05-31T14:14:01+00:00] INFO: Start handlers complete.
+I, [2019-05-31T15:14:01.555936 #69905]  INFO -- default-ubuntu-1604: resolving cookbooks for run list: ["uber-app::default"]
+I, [2019-05-31T15:14:02.104188 #69905]  INFO -- default-ubuntu-1604: [2019-05-31T14:14:02+00:00] INFO: Loading cookbooks [uber-app@0.1.0, nginx@9.0.0, snu_python@1.1.4, build-essential@8.2.1, ohai@5.2.5, yum-epel@3.3.0, poise-python@1.7.0, seven_zip@3.1.1, mingw@2.1.0, poise@2.8.2, poise-languages@2.1.2, windows@6.0.0, poise-archive@1.5.0]
+I, [2019-05-31T15:14:02.188688 #69905]  INFO -- default-ubuntu-1604: Synchronizing Cookbooks:
+I, [2019-05-31T15:14:02.197177 #69905]  INFO -- default-ubuntu-1604: [2019-05-31T14:14:02+00:00] INFO: Storing updated cookbooks/uber-app/recipes/default.rb in the cache.
+I, [2019-05-31T15:14:02.205218 #69905]  INFO -- default-ubuntu-1604:   - uber-app (0.1.0)
+I, [2019-05-31T15:14:02.220492 #69905]  INFO -- default-ubuntu-1604:   - yum-epel (3.3.0)
+I, [2019-05-31T15:14:02.222344 #69905]  INFO -- default-ubuntu-1604:   - ohai (5.2.5)
+I, [2019-05-31T15:14:02.226549 #69905]  INFO -- default-ubuntu-1604:   - build-essential (8.2.1)
+I, [2019-05-31T15:14:02.227156 #69905]  INFO -- default-ubuntu-1604:   - poise-python (1.7.0)
+I, [2019-05-31T15:14:02.229634 #69905]  INFO -- default-ubuntu-1604:   - seven_zip (3.1.1)
+I, [2019-05-31T15:14:02.237273 #69905]  INFO -- default-ubuntu-1604:   - mingw (2.1.0)
+I, [2019-05-31T15:14:02.241592 #69905]  INFO -- default-ubuntu-1604:   - windows (6.0.0)
+I, [2019-05-31T15:14:02.246984 #69905]  INFO -- default-ubuntu-1604:   - poise-languages (2.1.2)
+I, [2019-05-31T15:14:02.249056 #69905]  INFO -- default-ubuntu-1604:   - snu_python (1.1.4)
+I, [2019-05-31T15:14:02.249408 #69905]  INFO -- default-ubuntu-1604:   - poise (2.8.2)
+I, [2019-05-31T15:14:02.250783 #69905]  INFO -- default-ubuntu-1604:   - nginx (9.0.0)
+I, [2019-05-31T15:14:02.251426 #69905]  INFO -- default-ubuntu-1604:   - poise-archive (1.5.0)
+I, [2019-05-31T15:14:02.260607 #69905]  INFO -- default-ubuntu-1604: Installing Cookbook Gems:
+I, [2019-05-31T15:14:02.326479 #69905]  INFO -- default-ubuntu-1604: Compiling Cookbooks...
+I, [2019-05-31T15:14:02.429714 #69905]  INFO -- default-ubuntu-1604: /tmp/kitchen/cache/cookbooks/snu_python/libraries/poise_python/resources/python_package.rb:7: warning: already initialized constant PoisePython::Resources::PythonPackage::PIP_HACK_SCRIPT
+I, [2019-05-31T15:14:02.429789 #69905]  INFO -- default-ubuntu-1604: /tmp/kitchen/cache/cookbooks/poise-python/files/halite_gem/poise_python/resources/python_package.rb:34: warning: previous definition of PIP_HACK_SCRIPT was here
+I, [2019-05-31T15:14:02.571642 #69905]  INFO -- default-ubuntu-1604: Recipe: nginx::ohai_plugin
+I, [2019-05-31T15:14:02.572016 #69905]  INFO -- default-ubuntu-1604:   * ohai_plugin[nginx] action create[2019-05-31T14:14:02+00:00] INFO: Processing ohai_plugin[nginx] action create (nginx::ohai_plugin line 7)
+I, [2019-05-31T15:14:02.574476 #69905]  INFO -- default-ubuntu-1604: [2019-05-31T14:14:02+00:00] WARN: The Ohai plugin_path does not include /tmp/kitchen/ohai/plugins. Ohai will reload on each chef-client run in order to add this directory to the path unless you modify your client.rb configuration to add this directory to plugin_path. The plugin_path can be set via the chef-client::config recipe. See 'Ohai Settings' at https://docs.chef.io/config_rb_client.html#ohai-settings for more details.
+I, [2019-05-31T15:14:02.574554 #69905]  INFO -- default-ubuntu-1604: [2019-05-31T14:14:02+00:00] WARN: Adding /tmp/kitchen/ohai/plugins to the Ohai plugin path for this chef-client run only
+I, [2019-05-31T15:14:02.575620 #69905]  INFO -- default-ubuntu-1604: 
+I, [2019-05-31T15:14:02.576170 #69905]  INFO -- default-ubuntu-1604:     * directory[/tmp/kitchen/ohai/plugins] action create[2019-05-31T14:14:02+00:00] INFO: Processing directory[/tmp/kitchen/ohai/plugins] action create (/tmp/kitchen/cache/cookbooks/ohai/resources/plugin.rb line 12)
+I, [2019-05-31T15:14:02.576825 #69905]  INFO -- default-ubuntu-1604:  (skipped due to not_if)
+I, [2019-05-31T15:14:02.578698 #69905]  INFO -- default-ubuntu-1604:     * template[/tmp/kitchen/ohai/plugins/nginx.rb] action create[2019-05-31T14:14:02+00:00] INFO: Processing template[/tmp/kitchen/ohai/plugins/nginx.rb] action create (/tmp/kitchen/cache/cookbooks/ohai/resources/plugin.rb line 25)
+I, [2019-05-31T15:14:02.583471 #69905]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T15:14:02.584515 #69905]  INFO -- default-ubuntu-1604:     * ohai[nginx] action reload[2019-05-31T14:14:02+00:00] INFO: Processing ohai[nginx] action reload (/tmp/kitchen/cache/cookbooks/ohai/resources/plugin.rb line 42)
+I, [2019-05-31T15:14:02.586402 #69905]  INFO -- default-ubuntu-1604: [2019-05-31T14:14:02+00:00] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+I, [2019-05-31T15:14:02.637045 #69905]  INFO -- default-ubuntu-1604: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/ohai-14.8.10/lib/ohai/plugins/windows/filesystem.rb:26: warning: already initialized constant CONVERSION_STATUS
+I, [2019-05-31T15:14:02.637133 #69905]  INFO -- default-ubuntu-1604: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/ohai-14.8.10/lib/ohai/plugins/windows/filesystem.rb:26: warning: previous definition of CONVERSION_STATUS was here
+I, [2019-05-31T15:14:03.919910 #69905]  INFO -- default-ubuntu-1604: [2019-05-31T14:14:03+00:00] INFO: ohai[nginx] reloaded
+I, [2019-05-31T15:14:03.920359 #69905]  INFO -- default-ubuntu-1604: 
+I, [2019-05-31T15:14:03.920922 #69905]  INFO -- default-ubuntu-1604:       - re-run ohai and merge results into node attributes
+I, [2019-05-31T15:14:03.921208 #69905]  INFO -- default-ubuntu-1604:   
+I, [2019-05-31T15:14:03.937865 #69905]  INFO -- default-ubuntu-1604:   Converging 29 resources
+I, [2019-05-31T15:14:03.939089 #69905]  INFO -- default-ubuntu-1604: Recipe: nginx::default
+I, [2019-05-31T15:14:03.939394 #69905]  INFO -- default-ubuntu-1604:   * nginx_cleanup_runit[cleanup] action cleanup[2019-05-31T14:14:03+00:00] INFO: Processing nginx_cleanup_runit[cleanup] action cleanup (nginx::default line 1)
+I, [2019-05-31T15:14:03.942002 #69905]  INFO -- default-ubuntu-1604: 
+I, [2019-05-31T15:14:03.942372 #69905]  INFO -- default-ubuntu-1604:     * file[remove symlinked runit init script] action delete[2019-05-31T14:14:03+00:00] INFO: Processing file[remove symlinked runit init script] action delete (/tmp/kitchen/cache/cookbooks/nginx/resources/cleanup_runit.rb line 3)
+I, [2019-05-31T15:14:03.942882 #69905]  INFO -- default-ubuntu-1604:  (skipped due to only_if)
+I, [2019-05-31T15:14:03.944074 #69905]  INFO -- default-ubuntu-1604:     * execute[kill old nginx process] action run[2019-05-31T14:14:03+00:00] INFO: Processing execute[kill old nginx process] action run (/tmp/kitchen/cache/cookbooks/nginx/resources/cleanup_runit.rb line 10)
+I, [2019-05-31T15:14:03.944540 #69905]  INFO -- default-ubuntu-1604:  (skipped due to not_if)
+I, [2019-05-31T15:14:03.945915 #69905]  INFO -- default-ubuntu-1604:     * directory[/etc/sv/nginx] action delete[2019-05-31T14:14:03+00:00] INFO: Processing directory[/etc/sv/nginx] action delete (/tmp/kitchen/cache/cookbooks/nginx/resources/cleanup_runit.rb line 17)
+I, [2019-05-31T15:14:03.947653 #69905]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T15:14:03.947758 #69905]  INFO -- default-ubuntu-1604:      (up to date)
+I, [2019-05-31T15:14:03.948219 #69905]  INFO -- default-ubuntu-1604: Recipe: nginx::ohai_plugin
+I, [2019-05-31T15:14:03.948850 #69905]  INFO -- default-ubuntu-1604:   * ohai[reload_nginx] action nothing[2019-05-31T14:14:03+00:00] INFO: Processing ohai[reload_nginx] action nothing (nginx::ohai_plugin line 2)
+I, [2019-05-31T15:14:03.949245 #69905]  INFO -- default-ubuntu-1604:  (skipped due to action :nothing)
+I, [2019-05-31T15:14:03.950338 #69905]  INFO -- default-ubuntu-1604:   * ohai_plugin[nginx] action create[2019-05-31T14:14:03+00:00] INFO: Processing ohai_plugin[nginx] action create (nginx::ohai_plugin line 7)
+I, [2019-05-31T15:14:03.952710 #69905]  INFO -- default-ubuntu-1604: 
+I, [2019-05-31T15:14:03.953191 #69905]  INFO -- default-ubuntu-1604:     * directory[/tmp/kitchen/ohai/plugins] action create[2019-05-31T14:14:03+00:00] INFO: Processing directory[/tmp/kitchen/ohai/plugins] action create (/tmp/kitchen/cache/cookbooks/ohai/resources/plugin.rb line 12)
+I, [2019-05-31T15:14:03.953588 #69905]  INFO -- default-ubuntu-1604:  (skipped due to not_if)
+I, [2019-05-31T15:14:03.955095 #69905]  INFO -- default-ubuntu-1604:     * template[/tmp/kitchen/ohai/plugins/nginx.rb] action create[2019-05-31T14:14:03+00:00] INFO: Processing template[/tmp/kitchen/ohai/plugins/nginx.rb] action create (/tmp/kitchen/cache/cookbooks/ohai/resources/plugin.rb line 25)
+I, [2019-05-31T15:14:03.961003 #69905]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T15:14:03.962112 #69905]  INFO -- default-ubuntu-1604:     * ohai[nginx] action nothing[2019-05-31T14:14:03+00:00] INFO: Processing ohai[nginx] action nothing (/tmp/kitchen/cache/cookbooks/ohai/resources/plugin.rb line 42)
+I, [2019-05-31T15:14:03.962451 #69905]  INFO -- default-ubuntu-1604:  (skipped due to action :nothing)
+I, [2019-05-31T15:14:03.963081 #69905]  INFO -- default-ubuntu-1604:      (up to date)
+I, [2019-05-31T15:14:03.963437 #69905]  INFO -- default-ubuntu-1604: Recipe: nginx::repo
+I, [2019-05-31T15:14:03.965063 #69905]  INFO -- default-ubuntu-1604:   * apt_package[apt-transport-https] action install[2019-05-31T14:14:03+00:00] INFO: Processing apt_package[apt-transport-https] action install (nginx::repo line 21)
+I, [2019-05-31T15:14:04.034844 #69905]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T15:14:04.036195 #69905]  INFO -- default-ubuntu-1604:   * apt_repository[nginx] action add[2019-05-31T14:14:03+00:00] INFO: Processing apt_repository[nginx] action add (nginx::repo line 23)
+I, [2019-05-31T15:14:04.040904 #69905]  INFO -- default-ubuntu-1604: 
+I, [2019-05-31T15:14:04.041300 #69905]  INFO -- default-ubuntu-1604:     * remote_file[/tmp/kitchen/cache/https___nginx_org_keys_nginx_signing_key] action create[2019-05-31T14:14:03+00:00] INFO: Processing remote_file[/tmp/kitchen/cache/https___nginx_org_keys_nginx_signing_key] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_repository.rb line 207)
+I, [2019-05-31T15:14:04.136752 #69905]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T15:14:04.139857 #69905]  INFO -- default-ubuntu-1604:     * execute[apt-key add /tmp/kitchen/cache/https___nginx_org_keys_nginx_signing_key] action run[2019-05-31T14:14:04+00:00] INFO: Processing execute[apt-key add /tmp/kitchen/cache/https___nginx_org_keys_nginx_signing_key] action run (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_repository.rb line 215)
+I, [2019-05-31T15:14:04.336877 #69905]  INFO -- default-ubuntu-1604:  (skipped due to not_if)
+I, [2019-05-31T15:14:04.339532 #69905]  INFO -- default-ubuntu-1604:     * execute[apt-cache gencaches] action nothing[2019-05-31T14:14:04+00:00] INFO: Processing execute[apt-cache gencaches] action nothing (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_repository.rb line 51)
+I, [2019-05-31T15:14:04.339608 #69905]  INFO -- default-ubuntu-1604:  (skipped due to action :nothing)
+I, [2019-05-31T15:14:04.340577 #69905]  INFO -- default-ubuntu-1604:     * apt_update[nginx] action nothing[2019-05-31T14:14:04+00:00] INFO: Processing apt_update[nginx] action nothing (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_repository.rb line 58)
+I, [2019-05-31T15:14:04.341452 #69905]  INFO -- default-ubuntu-1604:  (skipped due to action :nothing)
+I, [2019-05-31T15:14:04.342515 #69905]  INFO -- default-ubuntu-1604:     * file[/etc/apt/sources.list.d/nginx.list] action create[2019-05-31T14:14:04+00:00] INFO: Processing file[/etc/apt/sources.list.d/nginx.list] action create (/opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.10.9/lib/chef/provider/apt_repository.rb line 74)
+I, [2019-05-31T15:14:04.347815 #69905]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T15:14:04.349421 #69905]  INFO -- default-ubuntu-1604:      (up to date)
+I, [2019-05-31T15:14:04.350651 #69905]  INFO -- default-ubuntu-1604: Recipe: nginx::package
+I, [2019-05-31T15:14:04.352561 #69905]  INFO -- default-ubuntu-1604:   * apt_package[nginx] action install[2019-05-31T14:14:04+00:00] INFO: Processing apt_package[nginx] action install (nginx::package line 23)
+I, [2019-05-31T15:14:04.428367 #69905]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T15:14:04.428708 #69905]  INFO -- default-ubuntu-1604: Recipe: nginx::commons_dir
+I, [2019-05-31T15:14:04.430052 #69905]  INFO -- default-ubuntu-1604:   * directory[/etc/nginx] action create[2019-05-31T14:14:04+00:00] INFO: Processing directory[/etc/nginx] action create (nginx::commons_dir line 1)
+I, [2019-05-31T15:14:04.433077 #69905]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T15:14:04.434330 #69905]  INFO -- default-ubuntu-1604:   * directory[/var/log/nginx] action create[2019-05-31T14:14:04+00:00] INFO: Processing directory[/var/log/nginx] action create (nginx::commons_dir line 6)
+I, [2019-05-31T15:14:04.437450 #69905]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T15:14:04.437818 #69905]  INFO -- default-ubuntu-1604:   * directory[pid file directory] action create[2019-05-31T14:14:04+00:00] INFO: Processing directory[pid file directory] action create (nginx::commons_dir line 13)
+I, [2019-05-31T15:14:04.440729 #69905]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T15:14:04.441188 #69905]  INFO -- default-ubuntu-1604:   * directory[/etc/nginx/sites-available] action create[2019-05-31T14:14:04+00:00] INFO: Processing directory[/etc/nginx/sites-available] action create (nginx::commons_dir line 20)
+I, [2019-05-31T15:14:04.443735 #69905]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T15:14:04.444521 #69905]  INFO -- default-ubuntu-1604:   * directory[/etc/nginx/sites-enabled] action create[2019-05-31T14:14:04+00:00] INFO: Processing directory[/etc/nginx/sites-enabled] action create (nginx::commons_dir line 20)
+I, [2019-05-31T15:14:04.446826 #69905]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T15:14:04.447540 #69905]  INFO -- default-ubuntu-1604:   * directory[/etc/nginx/conf.d] action create[2019-05-31T14:14:04+00:00] INFO: Processing directory[/etc/nginx/conf.d] action create (nginx::commons_dir line 20)
+I, [2019-05-31T15:14:04.450415 #69905]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T15:14:04.450788 #69905]  INFO -- default-ubuntu-1604:   * directory[/etc/nginx/streams-available] action create[2019-05-31T14:14:04+00:00] INFO: Processing directory[/etc/nginx/streams-available] action create (nginx::commons_dir line 20)
+I, [2019-05-31T15:14:04.453436 #69905]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T15:14:04.454518 #69905]  INFO -- default-ubuntu-1604:   * directory[/etc/nginx/streams-enabled] action create[2019-05-31T14:14:04+00:00] INFO: Processing directory[/etc/nginx/streams-enabled] action create (nginx::commons_dir line 20)
+I, [2019-05-31T15:14:04.457083 #69905]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T15:14:04.457401 #69905]  INFO -- default-ubuntu-1604: Recipe: nginx::commons_script
+I, [2019-05-31T15:14:04.458146 #69905]  INFO -- default-ubuntu-1604:   * template[/usr/sbin/nxensite] action create[2019-05-31T14:14:04+00:00] INFO: Processing template[/usr/sbin/nxensite] action create (nginx::commons_script line 2)
+I, [2019-05-31T15:14:04.463710 #69905]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T15:14:04.465693 #69905]  INFO -- default-ubuntu-1604:   * template[/usr/sbin/nxdissite] action create[2019-05-31T14:14:04+00:00] INFO: Processing template[/usr/sbin/nxdissite] action create (nginx::commons_script line 2)
+I, [2019-05-31T15:14:04.471360 #69905]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T15:14:04.473635 #69905]  INFO -- default-ubuntu-1604:   * template[/usr/sbin/nxenstream] action create[2019-05-31T14:14:04+00:00] INFO: Processing template[/usr/sbin/nxenstream] action create (nginx::commons_script line 2)
+I, [2019-05-31T15:14:04.478445 #69905]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T15:14:04.479196 #69905]  INFO -- default-ubuntu-1604:   * template[/usr/sbin/nxdisstream] action create[2019-05-31T14:14:04+00:00] INFO: Processing template[/usr/sbin/nxdisstream] action create (nginx::commons_script line 2)
+I, [2019-05-31T15:14:04.484456 #69905]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T15:14:04.484616 #69905]  INFO -- default-ubuntu-1604: Recipe: nginx::commons_conf
+I, [2019-05-31T15:14:04.487244 #69905]  INFO -- default-ubuntu-1604:   * template[nginx.conf] action create[2019-05-31T14:14:04+00:00] INFO: Processing template[nginx.conf] action create (nginx::commons_conf line 1)
+I, [2019-05-31T15:14:04.493627 #69905]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T15:14:04.494416 #69905]  INFO -- default-ubuntu-1604:   * template[/etc/nginx/sites-available/default] action create[2019-05-31T14:14:04+00:00] INFO: Processing template[/etc/nginx/sites-available/default] action create (nginx::commons_conf line 9)
+I, [2019-05-31T15:14:04.498570 #69905]  INFO -- default-ubuntu-1604:  (up to date)
+I, [2019-05-31T15:14:04.499180 #69905]  INFO -- default-ubuntu-1604:   * nginx_site[default] action enable[2019-05-31T14:14:04+00:00] INFO: Processing nginx_site[default] action enable (nginx::commons_conf line 14)
+I, [2019-05-31T15:14:04.502975 #69905]  INFO -- default-ubuntu-1604: 
+I, [2019-05-31T15:14:04.503503 #69905]  INFO -- default-ubuntu-1604:     * execute[nxensite default] action run[2019-05-31T14:14:04+00:00] INFO: Processing execute[nxensite default] action run (/tmp/kitchen/cache/cookbooks/nginx/resources/site.rb line 28)
+I, [2019-05-31T15:14:04.504541 #69905]  INFO -- default-ubuntu-1604:  (skipped due to not_if)
+I, [2019-05-31T15:14:04.504876 #69905]  INFO -- default-ubuntu-1604:      (up to date)
+I, [2019-05-31T15:14:04.505630 #69905]  INFO -- default-ubuntu-1604: Recipe: nginx::package
+I, [2019-05-31T15:14:04.507286 #69905]  INFO -- default-ubuntu-1604:   * service[nginx] action start[2019-05-31T14:14:04+00:00] INFO: Processing service[nginx] action start (nginx::package line 32)
+I, [2019-05-31T15:14:04.658335 #69905]  INFO -- default-ubuntu-1604: 
+I, [2019-05-31T15:14:04.659068 #69905]  INFO -- default-ubuntu-1604:     
+I, [2019-05-31T15:14:04.660182 #69905]  INFO -- default-ubuntu-1604:     ================================================================================
+I, [2019-05-31T15:14:04.661599 #69905]  INFO -- default-ubuntu-1604:     Error executing action `start` on resource 'service[nginx]'
+I, [2019-05-31T15:14:04.661699 #69905]  INFO -- default-ubuntu-1604:     ================================================================================
+I, [2019-05-31T15:14:04.662273 #69905]  INFO -- default-ubuntu-1604:     
+I, [2019-05-31T15:14:04.662724 #69905]  INFO -- default-ubuntu-1604:     Mixlib::ShellOut::ShellCommandFailed
+I, [2019-05-31T15:14:04.663150 #69905]  INFO -- default-ubuntu-1604:     ------------------------------------
+I, [2019-05-31T15:14:04.663235 #69905]  INFO -- default-ubuntu-1604:     Expected process to exit with [0], but received '1'
+I, [2019-05-31T15:14:04.663291 #69905]  INFO -- default-ubuntu-1604:     ---- Begin output of /bin/systemctl --system start nginx ----
+I, [2019-05-31T15:14:04.664073 #69905]  INFO -- default-ubuntu-1604:     STDOUT: 
+I, [2019-05-31T15:14:04.664151 #69905]  INFO -- default-ubuntu-1604:     STDERR: Job for nginx.service failed because the control process exited with error code. See "systemctl status nginx.service" and "journalctl -xe" for details.
+I, [2019-05-31T15:14:04.664187 #69905]  INFO -- default-ubuntu-1604:     ---- End output of /bin/systemctl --system start nginx ----
+I, [2019-05-31T15:14:04.664213 #69905]  INFO -- default-ubuntu-1604:     Ran /bin/systemctl --system start nginx returned 1
+I, [2019-05-31T15:14:04.664238 #69905]  INFO -- default-ubuntu-1604:     
+I, [2019-05-31T15:14:04.664261 #69905]  INFO -- default-ubuntu-1604:     Resource Declaration:
+I, [2019-05-31T15:14:04.664754 #69905]  INFO -- default-ubuntu-1604:     ---------------------
+I, [2019-05-31T15:14:04.664865 #69905]  INFO -- default-ubuntu-1604:     # In /tmp/kitchen/cache/cookbooks/nginx/recipes/package.rb
+I, [2019-05-31T15:14:04.664944 #69905]  INFO -- default-ubuntu-1604:     
+I, [2019-05-31T15:14:04.664986 #69905]  INFO -- default-ubuntu-1604:      32: service 'nginx' do
+I, [2019-05-31T15:14:04.665014 #69905]  INFO -- default-ubuntu-1604:      33:   supports status: true, restart: true, reload: true
+I, [2019-05-31T15:14:04.665040 #69905]  INFO -- default-ubuntu-1604:      34:   action   [:start, :enable]
+I, [2019-05-31T15:14:04.665062 #69905]  INFO -- default-ubuntu-1604:      35: end
+I, [2019-05-31T15:14:04.666123 #69905]  INFO -- default-ubuntu-1604:     
+I, [2019-05-31T15:14:04.666209 #69905]  INFO -- default-ubuntu-1604:     Compiled Resource:
+I, [2019-05-31T15:14:04.666250 #69905]  INFO -- default-ubuntu-1604:     ------------------
+I, [2019-05-31T15:14:04.666282 #69905]  INFO -- default-ubuntu-1604:     # Declared in /tmp/kitchen/cache/cookbooks/nginx/recipes/package.rb:32:in `from_file'
+I, [2019-05-31T15:14:04.666315 #69905]  INFO -- default-ubuntu-1604:     
+I, [2019-05-31T15:14:04.666358 #69905]  INFO -- default-ubuntu-1604:     service("nginx") do
+I, [2019-05-31T15:14:04.666397 #69905]  INFO -- default-ubuntu-1604:       action [:start, :enable]
+I, [2019-05-31T15:14:04.666477 #69905]  INFO -- default-ubuntu-1604:       default_guard_interpreter :default
+I, [2019-05-31T15:14:04.666518 #69905]  INFO -- default-ubuntu-1604:       service_name "nginx"
+I, [2019-05-31T15:14:04.666559 #69905]  INFO -- default-ubuntu-1604:       enabled nil
+I, [2019-05-31T15:14:04.666593 #69905]  INFO -- default-ubuntu-1604:       running nil
+I, [2019-05-31T15:14:04.666615 #69905]  INFO -- default-ubuntu-1604:       masked nil
+I, [2019-05-31T15:14:04.666635 #69905]  INFO -- default-ubuntu-1604:       pattern "nginx"
+I, [2019-05-31T15:14:04.666668 #69905]  INFO -- default-ubuntu-1604:       declared_type :service
+I, [2019-05-31T15:14:04.666706 #69905]  INFO -- default-ubuntu-1604:       cookbook_name "nginx"
+I, [2019-05-31T15:14:04.666732 #69905]  INFO -- default-ubuntu-1604:       recipe_name "package"
+I, [2019-05-31T15:14:04.666766 #69905]  INFO -- default-ubuntu-1604:       supports {:status=>true, :restart=>true, :reload=>true}
+I, [2019-05-31T15:14:04.666805 #69905]  INFO -- default-ubuntu-1604:     end
+I, [2019-05-31T15:14:04.667704 #69905]  INFO -- default-ubuntu-1604:     
+I, [2019-05-31T15:14:04.668324 #69905]  INFO -- default-ubuntu-1604:     System Info:
+I, [2019-05-31T15:14:04.668467 #69905]  INFO -- default-ubuntu-1604:     ------------
+I, [2019-05-31T15:14:04.669136 #69905]  INFO -- default-ubuntu-1604:     chef_version=14.10.9
+I, [2019-05-31T15:14:04.669207 #69905]  INFO -- default-ubuntu-1604:     platform=ubuntu
+I, [2019-05-31T15:14:04.669239 #69905]  INFO -- default-ubuntu-1604:     platform_version=16.04
+I, [2019-05-31T15:14:04.669265 #69905]  INFO -- default-ubuntu-1604:     ruby=ruby 2.5.3p105 (2018-10-18 revision 65156) [x86_64-linux]
+I, [2019-05-31T15:14:04.669290 #69905]  INFO -- default-ubuntu-1604:     program_name=/opt/chef/bin/chef-client
+I, [2019-05-31T15:14:04.669312 #69905]  INFO -- default-ubuntu-1604:     executable=/opt/chef/bin/chef-client
+I, [2019-05-31T15:14:04.669334 #69905]  INFO -- default-ubuntu-1604:     
+I, [2019-05-31T15:14:04.670576 #69905]  INFO -- default-ubuntu-1604: [2019-05-31T14:14:04+00:00] INFO: Running queued delayed notifications before re-raising exception
+I, [2019-05-31T15:14:04.671104 #69905]  INFO -- default-ubuntu-1604: 
+I, [2019-05-31T15:14:04.671712 #69905]  INFO -- default-ubuntu-1604: Running handlers:
+I, [2019-05-31T15:14:04.672283 #69905]  INFO -- default-ubuntu-1604: [2019-05-31T14:14:04+00:00] ERROR: Running exception handlers
+I, [2019-05-31T15:14:04.672879 #69905]  INFO -- default-ubuntu-1604: Running handlers complete
+I, [2019-05-31T15:14:04.673531 #69905]  INFO -- default-ubuntu-1604: [2019-05-31T14:14:04+00:00] ERROR: Exception handlers complete
+I, [2019-05-31T15:14:04.674145 #69905]  INFO -- default-ubuntu-1604: Chef Client failed. 2 resources updated in 04 seconds
+I, [2019-05-31T15:14:04.675718 #69905]  INFO -- default-ubuntu-1604: [2019-05-31T14:14:04+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2019-05-31T15:14:04.676456 #69905]  INFO -- default-ubuntu-1604: [2019-05-31T14:14:04+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+I, [2019-05-31T15:14:04.677439 #69905]  INFO -- default-ubuntu-1604: [2019-05-31T14:14:04+00:00] FATAL: Mixlib::ShellOut::ShellCommandFailed: service[nginx] (nginx::package line 32) had an error: Mixlib::ShellOut::ShellCommandFailed: Expected process to exit with [0], but received '1'
+I, [2019-05-31T15:14:04.678098 #69905]  INFO -- default-ubuntu-1604: ---- Begin output of /bin/systemctl --system start nginx ----
+I, [2019-05-31T15:14:04.678514 #69905]  INFO -- default-ubuntu-1604: STDOUT: 
+I, [2019-05-31T15:14:04.680409 #69905]  INFO -- default-ubuntu-1604: STDERR: Job for nginx.service failed because the control process exited with error code. See "systemctl status nginx.service" and "journalctl -xe" for details.
+I, [2019-05-31T15:14:04.680484 #69905]  INFO -- default-ubuntu-1604: ---- End output of /bin/systemctl --system start nginx ----
+I, [2019-05-31T15:14:04.680536 #69905]  INFO -- default-ubuntu-1604: Ran /bin/systemctl --system start nginx returned 1
+E, [2019-05-31T15:14:04.757454 #69905] ERROR -- default-ubuntu-1604: Converge failed on instance <default-ubuntu-1604>.
+E, [2019-05-31T15:14:04.757585 #69905] ERROR -- default-ubuntu-1604: ------Exception-------
+E, [2019-05-31T15:14:04.757611 #69905] ERROR -- default-ubuntu-1604: Class: Kitchen::ActionFailed
+E, [2019-05-31T15:14:04.757629 #69905] ERROR -- default-ubuntu-1604: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level info --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
+']
+E, [2019-05-31T15:14:04.757645 #69905] ERROR -- default-ubuntu-1604: ----------------------
+E, [2019-05-31T15:14:04.757661 #69905] ERROR -- default-ubuntu-1604: ------Backtrace-------
+E, [2019-05-31T15:14:04.757676 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/provisioner/base.rb:95:in `rescue in call'
+E, [2019-05-31T15:14:04.757692 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/provisioner/base.rb:71:in `call'
+E, [2019-05-31T15:14:04.757708 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:408:in `block in converge_action'
+E, [2019-05-31T15:14:04.757724 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:551:in `synchronize_or_call'
+E, [2019-05-31T15:14:04.757739 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:513:in `block in action'
+E, [2019-05-31T15:14:04.757755 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
+E, [2019-05-31T15:14:04.757771 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:512:in `action'
+E, [2019-05-31T15:14:04.757786 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:404:in `converge_action'
+E, [2019-05-31T15:14:04.757802 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2019-05-31T15:14:04.757817 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2019-05-31T15:14:04.757832 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2019-05-31T15:14:04.757847 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `each'
+E, [2019-05-31T15:14:04.757863 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2019-05-31T15:14:04.757878 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:140:in `converge'
+E, [2019-05-31T15:14:04.757894 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2019-05-31T15:14:04.757909 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2019-05-31T15:14:04.757924 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2019-05-31T15:14:04.757939 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/logging-2.2.2/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2019-05-31T15:14:04.757973 #69905] ERROR -- default-ubuntu-1604: ----End Backtrace-----
+E, [2019-05-31T15:14:04.757989 #69905] ERROR -- default-ubuntu-1604: ---Nested Exception---
+E, [2019-05-31T15:14:04.758004 #69905] ERROR -- default-ubuntu-1604: Class: Kitchen::Transport::SshFailed
+E, [2019-05-31T15:14:04.758019 #69905] ERROR -- default-ubuntu-1604: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level info --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
+']
+E, [2019-05-31T15:14:04.758034 #69905] ERROR -- default-ubuntu-1604: ----------------------
+E, [2019-05-31T15:14:04.758048 #69905] ERROR -- default-ubuntu-1604: ------Backtrace-------
+E, [2019-05-31T15:14:04.758063 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/provisioner/base.rb:95:in `rescue in call'
+E, [2019-05-31T15:14:04.758078 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/provisioner/base.rb:71:in `call'
+E, [2019-05-31T15:14:04.758093 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:408:in `block in converge_action'
+E, [2019-05-31T15:14:04.758108 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:551:in `synchronize_or_call'
+E, [2019-05-31T15:14:04.758123 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:513:in `block in action'
+E, [2019-05-31T15:14:04.758138 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
+E, [2019-05-31T15:14:04.758153 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:512:in `action'
+E, [2019-05-31T15:14:04.758169 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:404:in `converge_action'
+E, [2019-05-31T15:14:04.758184 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2019-05-31T15:14:04.758199 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2019-05-31T15:14:04.758214 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2019-05-31T15:14:04.758230 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `each'
+E, [2019-05-31T15:14:04.758245 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2019-05-31T15:14:04.758260 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:140:in `converge'
+E, [2019-05-31T15:14:04.758275 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2019-05-31T15:14:04.758290 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2019-05-31T15:14:04.758306 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2019-05-31T15:14:04.758333 #69905] ERROR -- default-ubuntu-1604: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/logging-2.2.2/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2019-05-31T15:14:04.758349 #69905] ERROR -- default-ubuntu-1604: ----End Backtrace-----

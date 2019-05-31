@@ -1,10 +1,76 @@
-I, [2019-05-30T19:21:54.095270 #62822]  INFO -- Kitchen: -----> Starting Kitchen (v1.24.0)
-I, [2019-05-30T19:22:08.097104 #62822]  INFO -- Kitchen: -----> Cleaning up any prior instances of <default-ubuntu-1604>
-I, [2019-05-30T19:22:08.097732 #62822]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1604>...
-I, [2019-05-30T19:22:15.116576 #62822]  INFO -- Kitchen: -----> Testing <default-ubuntu-1604>
-I, [2019-05-30T19:22:15.116813 #62822]  INFO -- Kitchen: -----> Creating <default-ubuntu-1604>...
-I, [2019-05-30T19:23:04.240432 #62822]  INFO -- Kitchen: -----> Converging <default-ubuntu-1604>...
-I, [2019-05-30T19:23:27.119586 #62822]  INFO -- Kitchen: -----> Setting up <default-ubuntu-1604>...
-I, [2019-05-30T19:23:27.122252 #62822]  INFO -- Kitchen: -----> Verifying <default-ubuntu-1604>...
-I, [2019-05-30T19:23:27.682699 #62822]  INFO -- Kitchen: -----> Destroying <default-ubuntu-1604>...
-I, [2019-05-30T19:23:33.879682 #62822]  INFO -- Kitchen: -----> Kitchen is finished. (1m39.78s)
+I, [2019-05-31T15:13:34.553352 #69905]  INFO -- Kitchen: -----> Starting Kitchen (v1.24.0)
+I, [2019-05-31T15:13:48.702286 #69905]  INFO -- Kitchen: -----> Converging <default-ubuntu-1604>...
+E, [2019-05-31T15:14:04.759579 #69905] ERROR -- Kitchen: ------Exception-------
+E, [2019-05-31T15:14:04.759664 #69905] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2019-05-31T15:14:04.759704 #69905] ERROR -- Kitchen: Message: 1 actions failed.
+>>>>>>     Converge failed on instance <default-ubuntu-1604>.  Please see .kitchen/logs/default-ubuntu-1604.log for more details
+E, [2019-05-31T15:14:04.759731 #69905] ERROR -- Kitchen: ----------------------
+E, [2019-05-31T15:14:04.759759 #69905] ERROR -- Kitchen: ------Backtrace-------
+E, [2019-05-31T15:14:04.759794 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:183:in `report_errors'
+E, [2019-05-31T15:14:04.759831 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:174:in `run_action'
+E, [2019-05-31T15:14:04.759861 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command/action.rb:36:in `block in call'
+E, [2019-05-31T15:14:04.759884 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
+E, [2019-05-31T15:14:04.759913 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command/action.rb:34:in `call'
+E, [2019-05-31T15:14:04.759934 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/cli.rb:52:in `perform'
+E, [2019-05-31T15:14:04.759954 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/cli.rb:193:in `block (2 levels) in <class:CLI>'
+E, [2019-05-31T15:14:04.759975 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/thor-0.20.3/lib/thor/command.rb:27:in `run'
+E, [2019-05-31T15:14:04.759995 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/thor-0.20.3/lib/thor/invocation.rb:126:in `invoke_command'
+E, [2019-05-31T15:14:04.760016 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/thor-0.20.3/lib/thor.rb:387:in `dispatch'
+E, [2019-05-31T15:14:04.760036 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/thor-0.20.3/lib/thor/base.rb:466:in `start'
+E, [2019-05-31T15:14:04.760056 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/bin/kitchen:13:in `block in <top (required)>'
+E, [2019-05-31T15:14:04.760077 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/errors.rb:171:in `with_friendly_errors'
+E, [2019-05-31T15:14:04.760097 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/bin/kitchen:13:in `<top (required)>'
+E, [2019-05-31T15:14:04.760117 #69905] ERROR -- Kitchen: /usr/local/bin/kitchen:308:in `load'
+E, [2019-05-31T15:14:04.760137 #69905] ERROR -- Kitchen: /usr/local/bin/kitchen:308:in `<main>'
+E, [2019-05-31T15:14:04.760157 #69905] ERROR -- Kitchen: ----End Backtrace-----
+E, [2019-05-31T15:14:04.760177 #69905] ERROR -- Kitchen: -Composite Exception--
+E, [2019-05-31T15:14:04.760196 #69905] ERROR -- Kitchen: Class: Kitchen::InstanceFailure
+E, [2019-05-31T15:14:04.760216 #69905] ERROR -- Kitchen: Message: Converge failed on instance <default-ubuntu-1604>.  Please see .kitchen/logs/default-ubuntu-1604.log for more details
+E, [2019-05-31T15:14:04.760236 #69905] ERROR -- Kitchen: ----------------------
+E, [2019-05-31T15:14:04.760255 #69905] ERROR -- Kitchen: ------Backtrace-------
+E, [2019-05-31T15:14:04.760275 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/provisioner/base.rb:95:in `rescue in call'
+E, [2019-05-31T15:14:04.760296 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/provisioner/base.rb:71:in `call'
+E, [2019-05-31T15:14:04.760341 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:408:in `block in converge_action'
+E, [2019-05-31T15:14:04.760359 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:551:in `synchronize_or_call'
+E, [2019-05-31T15:14:04.760376 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:513:in `block in action'
+E, [2019-05-31T15:14:04.760393 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
+E, [2019-05-31T15:14:04.760410 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:512:in `action'
+E, [2019-05-31T15:14:04.760426 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:404:in `converge_action'
+E, [2019-05-31T15:14:04.760443 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2019-05-31T15:14:04.760460 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2019-05-31T15:14:04.760478 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2019-05-31T15:14:04.760516 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `each'
+E, [2019-05-31T15:14:04.760543 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2019-05-31T15:14:04.760563 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:140:in `converge'
+E, [2019-05-31T15:14:04.760581 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2019-05-31T15:14:04.760599 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2019-05-31T15:14:04.760617 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2019-05-31T15:14:04.760645 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/logging-2.2.2/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2019-05-31T15:14:04.760675 #69905] ERROR -- Kitchen: ----End Backtrace-----
+E, [2019-05-31T15:14:04.760704 #69905] ERROR -- Kitchen: ---Nested Exception---
+E, [2019-05-31T15:14:04.760768 #69905] ERROR -- Kitchen: Class: Kitchen::ActionFailed
+E, [2019-05-31T15:14:04.760808 #69905] ERROR -- Kitchen: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level info --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
+']
+E, [2019-05-31T15:14:04.760851 #69905] ERROR -- Kitchen: ----------------------
+E, [2019-05-31T15:14:04.760871 #69905] ERROR -- Kitchen: ------Backtrace-------
+E, [2019-05-31T15:14:04.760898 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/provisioner/base.rb:95:in `rescue in call'
+E, [2019-05-31T15:14:04.760917 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/provisioner/base.rb:71:in `call'
+E, [2019-05-31T15:14:04.760934 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:408:in `block in converge_action'
+E, [2019-05-31T15:14:04.760951 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:551:in `synchronize_or_call'
+E, [2019-05-31T15:14:04.760987 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:513:in `block in action'
+E, [2019-05-31T15:14:04.761005 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/2.5.0/benchmark.rb:293:in `measure'
+E, [2019-05-31T15:14:04.761023 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:512:in `action'
+E, [2019-05-31T15:14:04.761040 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:404:in `converge_action'
+E, [2019-05-31T15:14:04.761056 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:382:in `block (2 levels) in transition_to'
+E, [2019-05-31T15:14:04.761073 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/lifecycle_hooks.rb:45:in `run_with_hooks'
+E, [2019-05-31T15:14:04.761090 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:381:in `block in transition_to'
+E, [2019-05-31T15:14:04.761107 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `each'
+E, [2019-05-31T15:14:04.761124 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:380:in `transition_to'
+E, [2019-05-31T15:14:04.761142 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/instance.rb:140:in `converge'
+E, [2019-05-31T15:14:04.761159 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `public_send'
+E, [2019-05-31T15:14:04.761177 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2019-05-31T15:14:04.761193 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/test-kitchen-1.24.0/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2019-05-31T15:14:04.761210 #69905] ERROR -- Kitchen: /opt/chefdk/embedded/lib/ruby/gems/2.5.0/gems/logging-2.2.2/lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+E, [2019-05-31T15:14:04.761228 #69905] ERROR -- Kitchen: ----End Backtrace-----
